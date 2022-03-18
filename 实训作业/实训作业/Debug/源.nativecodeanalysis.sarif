@@ -1,0 +1,2793 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C6386",
+          "message": {
+            "text": "写入到“tmp”时缓冲区溢出: 可写大小为“len*1”个字节，但可能写入了“2”个字节。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                },
+                "region": {
+                  "startLine": 368,
+                  "startColumn": 13,
+                  "endLine": 368,
+                  "endColumn": 70
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?MUL_INT@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V12@0@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 349,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 349,
+                            "startColumn": 31
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 350,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 351,
+                            "startColumn": 35
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 351,
+                            "startColumn": 23
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 351,
+                            "startColumn": 12
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 352,
+                            "startColumn": 35
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 352,
+                            "startColumn": 23
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 352,
+                            "startColumn": 12
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 355,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 356,
+                            "startColumn": 11
+                          }
+                        },
+                        "message": {
+                          "text": "“tmp”是一个 1 元素数组(1 字节)"
+                        }
+                      },
+                      "kinds": [
+                        "声明"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 357,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 357,
+                            "startColumn": 23
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 359,
+                            "startColumn": 16
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 360,
+                            "startColumn": 16
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 357,
+                            "startColumn": 31
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 357,
+                            "startColumn": 23
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 362,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 362,
+                            "startColumn": 23
+                          }
+                        },
+                        "message": {
+                          "text": "进入此循环(假定“i<len1”)"
+                        }
+                      },
+                      "kinds": [
+                        "分支"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 365,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 365,
+                            "startColumn": 21
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 366,
+                            "startColumn": 18
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 366,
+                            "startColumn": 27
+                          }
+                        },
+                        "message": {
+                          "text": "进入此循环(假定“j<len2”)"
+                        }
+                      },
+                      "kinds": [
+                        "分支"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 368,
+                            "startColumn": 20
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 369,
+                            "startColumn": 17
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 370,
+                            "startColumn": 24
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 371,
+                            "startColumn": 16
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 372,
+                            "startColumn": 18
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 366,
+                            "startColumn": 36
+                          }
+                        },
+                        "message": {
+                          "text": "“j”可能等于 1"
+                        }
+                      },
+                      "kinds": [
+                        "声明"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 366,
+                            "startColumn": 27
+                          }
+                        },
+                        "message": {
+                          "text": "继续此循环(假定“j<len2”)"
+                        }
+                      },
+                      "kinds": [
+                        "分支"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 368,
+                            "startColumn": 20
+                          }
+                        },
+                        "message": {
+                          "text": "“j”是“std::basic_string<char,std::char_traits<char>,std::allocator<char> >::[]”的输入/输出参数(在 c:\\program files (x86)\\microsoft visual studio\\2019\\professional\\vc\\tools\\msvc\\14.29.30133\\include\\xstring:3839 处声明)"
+                        }
+                      },
+                      "kinds": [
+                        "声明"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 368,
+                            "startColumn": 20
+                          }
+                        },
+                        "message": {
+                          "text": "写入到“tmp[1]”无效(可写范围是 0 到 0)"
+                        }
+                      },
+                      "kinds": [
+                        "使用情况"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6385",
+          "message": {
+            "text": "从“res”中读取的数据无效: 可读大小为“len*1”个字节，但可能读取了“2”个字节。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                },
+                "region": {
+                  "startLine": 369,
+                  "startColumn": 17,
+                  "endLine": 369,
+                  "endColumn": 66
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?MUL_INT@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V12@0@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 349,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 349,
+                            "startColumn": 31
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 350,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 351,
+                            "startColumn": 35
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 351,
+                            "startColumn": 23
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 351,
+                            "startColumn": 12
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 352,
+                            "startColumn": 35
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 352,
+                            "startColumn": 23
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 352,
+                            "startColumn": 12
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 355,
+                            "startColumn": 11
+                          }
+                        },
+                        "message": {
+                          "text": "“res”是一个 1 元素数组(1 字节)"
+                        }
+                      },
+                      "kinds": [
+                        "声明"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 356,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 357,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 357,
+                            "startColumn": 23
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 359,
+                            "startColumn": 16
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 360,
+                            "startColumn": 16
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 357,
+                            "startColumn": 31
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 357,
+                            "startColumn": 23
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 362,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 362,
+                            "startColumn": 23
+                          }
+                        },
+                        "message": {
+                          "text": "进入此循环(假定“i<len1”)"
+                        }
+                      },
+                      "kinds": [
+                        "分支"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 365,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 365,
+                            "startColumn": 21
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 366,
+                            "startColumn": 18
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 366,
+                            "startColumn": 27
+                          }
+                        },
+                        "message": {
+                          "text": "进入此循环(假定“j<len2”)"
+                        }
+                      },
+                      "kinds": [
+                        "分支"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 368,
+                            "startColumn": 20
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 369,
+                            "startColumn": 17
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 370,
+                            "startColumn": 24
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 371,
+                            "startColumn": 16
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 372,
+                            "startColumn": 18
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 366,
+                            "startColumn": 36
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 366,
+                            "startColumn": 27
+                          }
+                        },
+                        "message": {
+                          "text": "退出此循环(“j<len2”为 false)"
+                        }
+                      },
+                      "kinds": [
+                        "分支"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 375,
+                            "startColumn": 23
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 362,
+                            "startColumn": 32
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 362,
+                            "startColumn": 23
+                          }
+                        },
+                        "message": {
+                          "text": "继续此循环(假定“i<len1”)"
+                        }
+                      },
+                      "kinds": [
+                        "分支"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 365,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 365,
+                            "startColumn": 21
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 366,
+                            "startColumn": 18
+                          }
+                        },
+                        "message": {
+                          "text": "“j”为 NULL"
+                        }
+                      },
+                      "kinds": [
+                        "声明"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 366,
+                            "startColumn": 27
+                          }
+                        },
+                        "message": {
+                          "text": "进入此循环(假定“j<len2”)"
+                        }
+                      },
+                      "kinds": [
+                        "分支"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 368,
+                            "startColumn": 20
+                          }
+                        },
+                        "message": {
+                          "text": "“j”是“std::basic_string<char,std::char_traits<char>,std::allocator<char> >::[]”的输入/输出参数(在 c:\\program files (x86)\\microsoft visual studio\\2019\\professional\\vc\\tools\\msvc\\14.29.30133\\include\\xstring:3839 处声明)"
+                        }
+                      },
+                      "kinds": [
+                        "声明"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 369,
+                            "startColumn": 17
+                          }
+                        },
+                        "message": {
+                          "text": "从“res[1]”中读取无效(可读范围是 0 到 0)"
+                        }
+                      },
+                      "kinds": [
+                        "使用情况"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6385",
+          "message": {
+            "text": "从“tmp”中读取的数据无效: 可读大小为“len*1”个字节，但可能读取了“2”个字节。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                },
+                "region": {
+                  "startLine": 369,
+                  "startColumn": 17,
+                  "endLine": 369,
+                  "endColumn": 66
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?MUL_INT@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V12@0@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 349,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 349,
+                            "startColumn": 31
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 350,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 351,
+                            "startColumn": 35
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 351,
+                            "startColumn": 23
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 351,
+                            "startColumn": 12
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 352,
+                            "startColumn": 35
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 352,
+                            "startColumn": 23
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 352,
+                            "startColumn": 12
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 355,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 356,
+                            "startColumn": 11
+                          }
+                        },
+                        "message": {
+                          "text": "“tmp”是一个 1 元素数组(1 字节)"
+                        }
+                      },
+                      "kinds": [
+                        "声明"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 357,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 357,
+                            "startColumn": 23
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 359,
+                            "startColumn": 16
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 360,
+                            "startColumn": 16
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 357,
+                            "startColumn": 31
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 357,
+                            "startColumn": 23
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 362,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 362,
+                            "startColumn": 23
+                          }
+                        },
+                        "message": {
+                          "text": "进入此循环(假定“i<len1”)"
+                        }
+                      },
+                      "kinds": [
+                        "分支"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 365,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 365,
+                            "startColumn": 21
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 366,
+                            "startColumn": 18
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 366,
+                            "startColumn": 27
+                          }
+                        },
+                        "message": {
+                          "text": "进入此循环(假定“j<len2”)"
+                        }
+                      },
+                      "kinds": [
+                        "分支"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 368,
+                            "startColumn": 20
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 369,
+                            "startColumn": 17
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 370,
+                            "startColumn": 24
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 371,
+                            "startColumn": 16
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 372,
+                            "startColumn": 18
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 366,
+                            "startColumn": 36
+                          }
+                        },
+                        "message": {
+                          "text": "“j”可能等于 1"
+                        }
+                      },
+                      "kinds": [
+                        "声明"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 366,
+                            "startColumn": 27
+                          }
+                        },
+                        "message": {
+                          "text": "继续此循环(假定“j<len2”)"
+                        }
+                      },
+                      "kinds": [
+                        "分支"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 368,
+                            "startColumn": 20
+                          }
+                        },
+                        "message": {
+                          "text": "“j”是“std::basic_string<char,std::char_traits<char>,std::allocator<char> >::[]”的输入/输出参数(在 c:\\program files (x86)\\microsoft visual studio\\2019\\professional\\vc\\tools\\msvc\\14.29.30133\\include\\xstring:3839 处声明)"
+                        }
+                      },
+                      "kinds": [
+                        "声明"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 369,
+                            "startColumn": 17
+                          }
+                        },
+                        "message": {
+                          "text": "从“tmp[1]”中读取无效(可读范围是 0 到 0)"
+                        }
+                      },
+                      "kinds": [
+                        "使用情况"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6386",
+          "message": {
+            "text": "写入到“res”时缓冲区溢出: 可写大小为“len*1”个字节，但可能写入了“2”个字节。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                },
+                "region": {
+                  "startLine": 370,
+                  "startColumn": 13,
+                  "endLine": 370,
+                  "endColumn": 42
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?MUL_INT@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V12@0@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 349,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 349,
+                            "startColumn": 31
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 350,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 351,
+                            "startColumn": 35
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 351,
+                            "startColumn": 23
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 351,
+                            "startColumn": 12
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 352,
+                            "startColumn": 35
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 352,
+                            "startColumn": 23
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 352,
+                            "startColumn": 12
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 355,
+                            "startColumn": 11
+                          }
+                        },
+                        "message": {
+                          "text": "“res”是一个 1 元素数组(1 字节)"
+                        }
+                      },
+                      "kinds": [
+                        "声明"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 356,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 357,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 357,
+                            "startColumn": 23
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 359,
+                            "startColumn": 16
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 360,
+                            "startColumn": 16
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 357,
+                            "startColumn": 31
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 357,
+                            "startColumn": 23
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 362,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 362,
+                            "startColumn": 23
+                          }
+                        },
+                        "message": {
+                          "text": "进入此循环(假定“i<len1”)"
+                        }
+                      },
+                      "kinds": [
+                        "分支"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 365,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 365,
+                            "startColumn": 21
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 366,
+                            "startColumn": 18
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 366,
+                            "startColumn": 27
+                          }
+                        },
+                        "message": {
+                          "text": "进入此循环(假定“j<len2”)"
+                        }
+                      },
+                      "kinds": [
+                        "分支"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 368,
+                            "startColumn": 20
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 369,
+                            "startColumn": 17
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 370,
+                            "startColumn": 24
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 371,
+                            "startColumn": 16
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 372,
+                            "startColumn": 18
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 366,
+                            "startColumn": 36
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 366,
+                            "startColumn": 27
+                          }
+                        },
+                        "message": {
+                          "text": "退出此循环(“j<len2”为 false)"
+                        }
+                      },
+                      "kinds": [
+                        "分支"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 375,
+                            "startColumn": 23
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 362,
+                            "startColumn": 32
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 362,
+                            "startColumn": 23
+                          }
+                        },
+                        "message": {
+                          "text": "继续此循环(假定“i<len1”)"
+                        }
+                      },
+                      "kinds": [
+                        "分支"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 365,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 365,
+                            "startColumn": 21
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 366,
+                            "startColumn": 18
+                          }
+                        },
+                        "message": {
+                          "text": "“j”为 NULL"
+                        }
+                      },
+                      "kinds": [
+                        "声明"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 366,
+                            "startColumn": 27
+                          }
+                        },
+                        "message": {
+                          "text": "进入此循环(假定“j<len2”)"
+                        }
+                      },
+                      "kinds": [
+                        "分支"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 368,
+                            "startColumn": 20
+                          }
+                        },
+                        "message": {
+                          "text": "“j”是“std::basic_string<char,std::char_traits<char>,std::allocator<char> >::[]”的输入/输出参数(在 c:\\program files (x86)\\microsoft visual studio\\2019\\professional\\vc\\tools\\msvc\\14.29.30133\\include\\xstring:3839 处声明)"
+                        }
+                      },
+                      "kinds": [
+                        "声明"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 369,
+                            "startColumn": 17
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 370,
+                            "startColumn": 24
+                          }
+                        },
+                        "message": {
+                          "text": "写入到“res[1]”无效(可写范围是 0 到 0)"
+                        }
+                      },
+                      "kinds": [
+                        "使用情况"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6001",
+          "message": {
+            "text": "使用未初始化的内存“result”。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                },
+                "region": {
+                  "startLine": 663,
+                  "startColumn": 12,
+                  "endLine": 663,
+                  "endColumn": 12
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?contrast@@YAHV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 609,
+                            "startColumn": 15
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 609,
+                            "startColumn": 12
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 610,
+                            "startColumn": 15
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 610,
+                            "startColumn": 12
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 611,
+                            "startColumn": 8
+                          }
+                        },
+                        "message": {
+                          "text": "未初始化“result”"
+                        }
+                      },
+                      "kinds": [
+                        "声明"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 612,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 613,
+                            "startColumn": 59
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 614,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 615,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 616,
+                            "startColumn": 46
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 617,
+                            "startColumn": 17
+                          }
+                        },
+                        "message": {
+                          "text": "跳过此分支(假定“size_int1<size_int2”为 false)"
+                        }
+                      },
+                      "kinds": [
+                        "分支"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 622,
+                            "startColumn": 19
+                          }
+                        },
+                        "message": {
+                          "text": "跳过此分支(假定“size_int1>size_int2”为 false)"
+                        }
+                      },
+                      "kinds": [
+                        "分支"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 627,
+                            "startColumn": 19
+                          }
+                        },
+                        "message": {
+                          "text": "进入此分支(假定“size_int1==size_int2”)"
+                        }
+                      },
+                      "kinds": [
+                        "分支"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 629,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 630,
+                            "startColumn": 18
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 630,
+                            "startColumn": 27
+                          }
+                        },
+                        "message": {
+                          "text": "跳过此循环(假定“i<size_int1”为 false)"
+                        }
+                      },
+                      "kinds": [
+                        "分支"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 641,
+                            "startColumn": 19
+                          }
+                        },
+                        "message": {
+                          "text": "跳过此分支(假定“n==size_int1”为 false)"
+                        }
+                      },
+                      "kinds": [
+                        "分支"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 648,
+                            "startColumn": 25
+                          }
+                        },
+                        "message": {
+                          "text": "跳过此分支(假定“<(t1, t2)”为 false)"
+                        }
+                      },
+                      "kinds": [
+                        "分支"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 653,
+                            "startColumn": 23
+                          }
+                        },
+                        "message": {
+                          "text": "跳过此分支(假定“>(t1, t2)”为 false)"
+                        }
+                      },
+                      "kinds": [
+                        "分支"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 610,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 609,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 663,
+                            "startColumn": 5
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+                          },
+                          "region": {
+                            "startLine": 663,
+                            "startColumn": 12
+                          }
+                        },
+                        "message": {
+                          "text": "已使用“result”，但可能尚未将其初始化"
+                        }
+                      },
+                      "kinds": [
+                        "使用情况"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.29.30133.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "commandLine": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Professional\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX86\\x86\\c1xx.dll\" -ACf{1F7B090C-16DB-4822-966A-A93D26ED4681} -ACpmspft140.dll -Alint -D_PREFAST_ -D_AST_FE_ -Analyze -zm0x009ED1C0 -il C:\\Users\\Administrator\\AppData\\Local\\Temp\\_CL_4105b6d1ast -typedil -f 源.cpp -Ze -D_MSC_EXTENSIONS -Zp8 -Gs -pc \\:/ -D_MSC_VER=1929 -D_MSC_FULL_VER=192930133 -D_MSC_BUILD=0 -D_WIN32 -D_M_IX86=600 -D_M_IX86_FP=2 -GR -D_CPPRTTI -nologo -W 3 -diagnostics:column -D_GUARDOVERFLOW_CRT_ALLOCATORS=1 -Ot -DCODE_ANALYSIS -DWIN32 -D_DEBUG -D_CONSOLE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_UNICODE -DUNICODE -EHs -D_CPPUNWIND -EHc -D__MSVC_RUNTIME_CHECKS -RTCs -RTCu -MDd -D_DEBUG -D_MT -D_DLL -GS -D_M_FP_PRECISE -permissive- -Zc:wchar_t -Zc:forScope -FoDebug\\源.obj -FdDebug\\vc142.pdb -external:W 3 -Gd -analyze:projectdirectory C:\\Users\\Administrator\\Desktop\\c语言\\C++\\实训作业\\实训作业 -analyze:rulesetdirectory ;C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Professional\\Team Tools\\Static Analysis Tools\\\\Rule Sets; -analyze:ruleset C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Professional\\Team Tools\\Static Analysis Tools\\Rule Sets\\NativeRecommendedRules.ruleset -analyze:quiet -analyze:plugin C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Professional\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX86\\x86\\EspXEngine.dll -FC -errorreport:prompt -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Professional\\VC\\Tools\\MSVC\\14.29.30133\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Professional\\VC\\Tools\\MSVC\\14.29.30133\\atlmfc\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Professional\\VC\\Auxiliary\\VS\\include -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\ucrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\um -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\shared -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\winrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\cppwinrt -I C:\\Users\\Administrator\\Desktop\\c语言\\C++\\实训作业\\实训作业\\Include\\um -external:I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Professional\\VC\\Tools\\MSVC\\14.29.30133\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Professional\\VC\\Tools\\MSVC\\14.29.30133\\include -external:I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Professional\\VC\\Tools\\MSVC\\14.29.30133\\atlmfc\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Professional\\VC\\Tools\\MSVC\\14.29.30133\\atlmfc\\include -external:I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Professional\\VC\\Auxiliary\\VS\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Professional\\VC\\Auxiliary\\VS\\include -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\ucrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\ucrt -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\um -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\um -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\shared -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\shared -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\winrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\winrt -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\cppwinrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\cppwinrt -external:I C:\\Users\\Administrator\\Desktop\\c语言\\C++\\实训作业\\实训作业\\Include\\um -I C:\\Users\\Administrator\\Desktop\\c语言\\C++\\实训作业\\实训作业\\Include\\um",
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///C:/Users/Administrator/Desktop/c语言/C++/实训作业/实训作业/源.cpp"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "md5": "fb823903be91248ff2acbceda08ecd20"
+          }
+        }
+      ]
+    }
+  ]
+}
