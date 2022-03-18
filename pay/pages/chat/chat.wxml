@@ -1,0 +1,43 @@
+
+
+<scroll-view class="scroll">
+  <block wx:for="{{chatList}}">
+
+<block wx:if="{{userInfo._id != item.userId}}">
+  <view class="top">
+    <image class="face" src="{{item.faceImg}}"></image>
+    <view class="nick">{{item.nickName}}</view>
+  </view>
+  <view class="bot">
+    <view class="bot-text"><text>{{item.text}}</text></view>
+  </view>
+</block>
+
+<block wx:if="{{userInfo._id == item.userId}}">
+  <view class="top-right">
+    <view></view>
+    <view class="top-2">
+      <view class="nick-right">{{item.nickName}}</view>
+      <image class="face-right" src="{{item.faceImg}}"></image>
+    </view>
+  </view>
+  <view class="bot-right">
+    <view class="bot-text"><text>{{item.text}}</text></view>
+
+  </view>
+</block>
+
+</block>
+</scroll-view>
+
+
+<view class="pub-comment">
+  <view class="pub-left">
+    <input class="pub-input" placeholder="{{plcaceHolder}}" bindinput="getInputValue" value="{{inputValue}}"></input>
+  </view>
+  <view class="pub-button" bindtap="publishChat">发送</view>
+</view>
+
+
+
+

@@ -1,0 +1,14 @@
+<view class="all" wx:if="{{yanzhenInfo}}">
+<block wx:for="{{tieziList}}" wx:key="index"> 
+<view class="itemRoot" bindtap="goDetail" data-id="{{item}}">
+  <view  class="delete" data-id="{{item._id}}" bindtap="removeItem"><text>删除</text>
+ </view>
+<view>{{item.title}}</view>
+<view>求助人：{{item.author}}</view>
+<view>报酬金额:{{item.money}}</view>
+<view>{{item.creatime}}</view>
+<view class="xijie"bindtap="geDetail" >查看详情</view>
+</view>
+</block>
+</view>
+<view wx:if="{{!yanzhenInfo}}">必须授权登录后实名注册才可浏览哦</view>

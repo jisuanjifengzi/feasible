@@ -1,0 +1,27 @@
+<!-- <view class="bg">
+<image class="bg-image" mode="scaleToFill" src="https://s2.loli.net/2022/02/09/AH2qgYuSpTayQed.png"></image>
+</view> -->
+
+
+<view wx:if="{{yanzhenInfo}}">
+<block wx:for="{{datalist}}" wx:key="index"> 
+<view class="itemRoot" bindtap="goDetail" data-id="{{item}}">
+  <image class="touxiang" bindtap="text" src="{{item.faceImg}}"></image>
+  <view class="author">{{item.author}} </view>
+  <image class="xingbie" bindtap="text" src="{{item.xing}}"></image>
+  <view class='detail'>{{item.title}}:</view>
+  <text>{{item.desc}}</text>
+  <view wx:if="{{item.image[0]}}">
+  <image src="{{item.image[0]}}"></image> 
+  </view>
+  <view class="detail0">#{{item.kind}}</view>
+   <view class="detail2">{{item.creatime}}</view>
+</view>
+</block>
+<view>
+<image  bindtap="quxiepinglun" class="addTopicBtn" src="/image/write.png"></image>
+</view>
+</view>
+
+
+<view wx:if="{{!yanzhenInfo}}">必须授权登录后实名注册才可浏览哦</view>

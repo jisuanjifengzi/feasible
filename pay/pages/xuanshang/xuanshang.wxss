@@ -1,0 +1,22 @@
+input,textarea{ border:1px solid #888}
+page{
+  background-color: #f9f3f3;
+}
+.submitClass{
+  float: right;
+  left: 300rpx;
+  background-color: darkturquoise;
+  color: white;
+  padding: 0;
+  line-height: 70rpx;
+  border-radius: 30rpx;
+  margin-bottom: 20rpx;
+}
+.pic{
+  width: 64rpx;
+  height: 64rpx;
+  margin-left: 20rpx;
+ }
+ .bottom{
+  background: fixed;
+ }

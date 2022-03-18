@@ -1,0 +1,12 @@
+
+
+
+<view class="detail">公告</view>
+<view>1.新人第一次使用时记得授权登录，不然无法正常使用和查看自己的帖子</view>
+<image class="image" bindtap="chakan" data-number="0"  src='{{imgArr[0]}}' ></image>
+<view>2:本小程序必须实名认证之后才可以使用其中功能，且实名注册每人只能注册一次，请谨慎填写</view>
+<view>3:小程序目前处于初级开发阶段，所以求助悬赏部分每贴只收取1元手续费，所给予给帮助者的报酬由大家自定义</view>
+<view>4:悬赏互助贴如果想联系求助者，点击对应帖子再点击右下角的圆圈即可与求助者联系</view>
+<image  class="image" bindtap="chakan" data-number="2" src='{{imgArr[2]}}'></image>
+<view>5.用户右上角三个图标分别对应退出登录、问题反馈（举报）、客服咨询</view>
+<image  class="image" bindtap="chakan" data-number="3" src='{{imgArr[3]}}'></image>

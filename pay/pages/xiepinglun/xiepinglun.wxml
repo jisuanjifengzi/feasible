@@ -1,0 +1,17 @@
+<view class="bg">
+<image class="bg-image" mode="scaleToFill" src="https://s2.loli.net/2022/02/09/QJXYCjDx7ZEVuvL.jpg"></image>
+</view>
+<form bindsubmit="btnSub">
+<input name="title" style="background: fixed; " placeholder="请输入标题"></input>
+<input name="author" style="background: fixed; " placeholder="请输入用户名称（可以是非真实姓名）"></input>
+<textarea name="desc" style="width:90%; margin:0 auto; border-radius:20rpx; background: fixed;  padding:20rpx; padding-bottom:0rpx;" 
+placeholder="请输入内容"></textarea>
+<image src="../../image/tupian.png" class="'pic" bindtap="_chooseImg"></image>
+      <radio-group bindchange="radioChange">
+        <label class="all" wx:for="{{items}}" wx:key="{{item.value}}">
+         <radio value="{{item.value}}" checked="true"/>
+         <view class="name">{{item.name}}</view>
+        </label>
+      </radio-group>
+<button class="bottom" form-type="submit">提交</button>
+</form>

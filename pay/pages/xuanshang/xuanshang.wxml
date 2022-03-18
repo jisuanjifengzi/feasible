@@ -1,0 +1,12 @@
+<form bindsubmit="btnSub">
+<input name="title" style="background: fixed;" placeholder="请输入标题"></input>
+<input name="author" style="background: fixed;" placeholder="请输入用户名称(可以是非真实姓名)"></input>
+<input name="money" type="number" style="background: fixed;" placeholder="请输入你所能给的报酬数额（按元计算）"></input>
+<textarea name="desc" style="width:94%; margin:0 auto; background: fixed; padding:20rpx; padding-bottom:0rpx;" 
+placeholder="请输入内容"></textarea>
+<image src="../../image/tupian.png" class="'pic" bindtap="_chooseImg"></image>
+<button class="bottom" bindtap="goPay">请先支付1元手续费</button> 
+<view wx:if="{{fuqian}}">
+<button  class="bottom" type="primary" form-type="submit">发布你的委托</button>
+</view>
+</form>

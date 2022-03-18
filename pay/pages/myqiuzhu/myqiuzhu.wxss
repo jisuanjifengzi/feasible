@@ -1,0 +1,19 @@
+.xijie{
+  position: relative;
+  
+}
+.delete{
+  color: brown;
+  position: relative;
+  left:550rpx;
+  top:2rpx;
+}
+.itemRoot{
+  border-bottom:1px solid gainsboro;
+  margin:15rpx;
+  color:white;
+padding: 50rpx 50rpx;
+   background-image: url('https://636c-cloud1-8g11sxvec79885c1-1309164839.tcb.qcloud.la/sign-5730374.png?sign=e12c644a2eb54c3f2d3e3bc0c4a78460&t=1643354147'); 
+
+  background-size:100% 100% ;
+}

@@ -1,0 +1,27 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/youchang/youchang",
+    "pages/home/home",
+    "pages/chat/chat",
+    "pages/mytiezi/mytiezi",
+    "pages/detail/detail",
+    "pages/xiepinglun/xiepinglun",
+    "pages/shimingzhuce/shimingzhuce",
+    "pages/xuanshang/xuanshang",
+    "pages/xuanshangdetail/xuanshangdetail",
+    "pages/myqiuzhu/myqiuzhu",
+    "pages/chakandetail/chakandetail",
+    "pages/xieyi/xieyi"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true,
+    "backgroundColor": "#efefef"
+  },
+ 
+  "sitemapLocation": "sitemap.json"
+}

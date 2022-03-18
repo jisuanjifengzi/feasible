@@ -1,0 +1,81 @@
+<image class="bg" src='/image/HSBJ.jpeg' mode="scaleToFill"></image>
+<view class='view1'>
+  <view class='view11'>
+    <button class='button111' wx:if="{{!userInfo}}"  bindtap="login">授权登录</button>
+    <view wx:else class='view111'>
+      <image bindtap="test" class='view1111' src="{{userInfo.avatarUrl}}"></image>
+      <view class='view1112'>
+        {{userInfo.nickName}}
+      </view>
+    </view>
+    <button class='view112' open-type="feedback"></button>
+    <image class="image1121" src="/image/YJ.png"></image>
+    <button class='view113' open-type="contact"></button>
+    <image class="image1131" src="/image/KF.png"></image>
+    <image bindtap="loginOut" class="image114" src="/image/TCDL.png"></image>
+  </view>
+  <view class='view12'>
+    <image bindtap="youchang" class='image121' src="/image/WJJ.png"></image>
+    <image bindtap="wuchang" class='image121' src="/image/WB.png"></image>
+    <image bindtap="" class='image121' src="/image/XX.png"></image>
+  </view>
+  <view class='view13'>
+    <view class='view131'>我的悬赏</view>
+    <view class='view131'>我的讨论</view>
+    <view class='view131'>消息</view>
+  </view>
+</view>
+
+<view class='view2'>
+  <view class='view21'>
+    基本功能
+  </view>
+  <view class='view22'>
+    <image bindtap="xuanshang" class='image121' src="/image/JB.png"></image>
+    <image bindtap="home" class='image121' src="/image/S.png"></image>
+    <image bindtap="shimingzhuce" class='image121' src="/image/GRTX.png"></image>
+    <image bindtap="toGG" class='image121' src="/image/GG.png"></image>
+  </view>
+  <view class='view23'>
+    <view class='view231'>悬赏榜</view>
+    <view class='view231'>讨论区</view>
+    <view class='view231'>实名认证</view>
+    <view class='view231'>公告</view>
+  </view>
+</view>
+
+<view class='view2'>
+  <view class='view21'>
+    建设中...
+  </view>
+  <view class='view22'>
+    <!-- <image bindtap="xuanshang" class='image121' src="/image/JB.png"></image>
+    <image bindtap="home" class='image121' src="/image/S.png"></image>
+    <image bindtap="shimingzhuce" class='image121' src="/image/GRTX.png"></image>
+    <image bindtap="toGG" class='image121' src="/image/GG.png"></image> -->
+  </view>
+  <view class='view23'>
+    <view class='view231'></view>
+    <view class='view231'></view>
+    <view class='view231'></view>
+    <view class='view231'></view>
+  </view>
+</view>
+
+<view class='view2'>
+  <view class='view21'>
+    建设中...
+  </view>
+  <view class='view22'>
+    <!-- <image bindtap="xuanshang" class='image121' src="/image/JB.png"></image>
+    <image bindtap="home" class='image121' src="/image/S.png"></image>
+    <image bindtap="shimingzhuce" class='image121' src="/image/GRTX.png"></image>
+    <image bindtap="toGG" class='image121' src="/image/GG.png"></image> -->
+  </view>
+  <view class='view23'>
+    <view class='view231'></view>
+    <view class='view231'></view>
+    <view class='view231'></view>
+    <view class='view231'></view>
+  </view>
+</view>

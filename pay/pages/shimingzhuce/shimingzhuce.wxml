@@ -1,0 +1,24 @@
+<view wx:if="{{yanzhenInfo!=1}}">
+输入用户所在学校
+<input class="input" bindinput="getSchool"></input>
+输入用户真实姓名
+<input class="input" bindinput="getName"></input>
+<radio-group bindchange="radioChange">
+        <label class="all" wx:for="{{items}}" wx:key="{{item.value}}">
+         <radio value="{{item.value}}" checked="true"/>
+         <view class="name">{{item.name}}</view>
+        </label>
+      </radio-group>
+输入用户学号
+<input class="input" type="number"  bindinput="getxuehao"></input>
+输入用户身份证号(若有'x'字符则用10代替)
+<input class="input" type="number" bindinput="getShenfenzhen"></input>
+输入用户所在年级及专业
+<input class="input" bindinput="getNianji"></input>
+<view >
+<button bindtap="zhuce" type="primary">注册</button>
+</view>
+</view>
+<view wx:if="{{yanzhenInfo==1}}">已注册成功</view>
+<view>{{app.globalData.yanzhenInfo}}</view>
+<button bindtap="xieyi" class="xieyi">阅读并同意《用户服务协议》和《隐私协议》</button>

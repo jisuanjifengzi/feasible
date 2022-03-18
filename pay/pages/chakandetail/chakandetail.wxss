@@ -1,0 +1,8 @@
+/* pages/chakandetail/chakandetail.wxss */
+.detail{
+  font-size: 50rpx;
+}
+.image{
+  width: 200rpx;
+  height: 250rpx;
+}

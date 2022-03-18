@@ -1,0 +1,47 @@
+/* pages/home/home.wxss */
+.all{
+   background-image:url('https://636c-cloud1-8g11sxvec79885c1-1309164839.tcb.qcloud.la/vintage-1557993.jpg?sign=7b8339ba36d14ea5b5cbe0c6143c7a32&t=1643354112');
+
+}
+.itemRoot{
+  border-bottom:1px solid gainsboro;
+  margin:15rpx;
+  color:white;
+padding: 50rpx 50rpx;
+   background-image: url('https://636c-cloud1-8g11sxvec79885c1-1309164839.tcb.qcloud.la/sign-5730374.png?sign=e12c644a2eb54c3f2d3e3bc0c4a78460&t=1643354147'); 
+
+  background-size:100% 100% ;
+}
+.add{
+  float: right;
+  bottom: 60rpx;
+  left: 10rpx;
+  background-color: darkturquoise;
+  color: white;
+  padding: 0rpx;
+  line-height: 60rpx;
+  border-radius: 30rpx;
+  margin-bottom: 10rpx;
+  text-align: center;
+}
+.addTopicBtn {
+  height: 90rpx;
+  width: 150rpx;
+  position: fixed;
+  bottom: 300rpx;
+  right: 10rpx;
+  opacity: 0.7;
+}
+.xijie{
+  position: relative;
+  
+}
+.swiper-container{
+  height:150px;
+  border-bottom: solid black;
+  
+}
+.swiper-image{
+  width: 100%;
+  height: 100%;
+}

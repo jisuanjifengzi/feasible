@@ -1,0 +1,18 @@
+.input{
+  border:1px solid gainsboro;
+  margin: 15rpx;
+}
+.xieyi{
+  position: absolute;
+  width: 100%;
+ bottom: 0rpx;
+  font-size: 15rpx;
+}
+.all{
+  padding: 20rpx 27rpx 20rpx 20rpx;
+    display:inline-block
+  }
+  .name{
+   position: relative;
+  left: 5px;
+  }

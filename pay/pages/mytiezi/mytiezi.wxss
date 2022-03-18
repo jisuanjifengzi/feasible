@@ -1,0 +1,78 @@
+/* pages/home/home.wxss */
+page{
+  height: 100%;
+ background-color: lightblue;
+}
+/* .bg{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:url(' ..图片地址.. ') 
+  no-repeat #000;
+  background-size:cover;
+  z-index:-1;
+  }
+  
+  .bg-image{
+      width : 100%;
+      height : 100%;
+  } */
+.detail{
+  font-size: 40rpx;
+}
+.detail0{
+  position: relative; 
+  left: 280px;
+  font-size: 25rpx;
+}
+.detail2{
+   position: relative; 
+  
+  left: 200px;
+  font-size: 25rpx;
+}
+.itemRoot{
+  /* border-bottom:1px solid black; */
+  background-color: white;
+  /* width: 350px;
+  height:300px; */
+  border-radius: 20px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.delete{
+  color: brown;
+  position: relative;
+  left:550rpx;
+  top:40rpx;
+}
+.touxiang{ position: relative;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+.xingbie{ 
+  position: relative;
+  left:110rpx;
+  bottom: 80rpx;
+width: 20px;
+height:20px;
+border-radius: 50%;
+}
+
+.addTopicBtn {
+  height: 80rpx;
+  width: 80rpx;
+  position: fixed;
+  bottom: 300rpx;
+  right: 10rpx;
+  opacity: 0.7;
+}
+.author{
+  position: relative;
+  left: 60px;
+  bottom: 50px;
+}

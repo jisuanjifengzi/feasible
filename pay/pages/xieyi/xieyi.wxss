@@ -1,0 +1,14 @@
+/* pages/xieyi/xieyi.wxss */
+.xieyi{
+  display: flex;
+  justify-content: center;
+  font-size: 60rpx;
+}
+.scroll{
+  width: 100%;
+  height: 200px;
+}
+.text{
+  width: 100%;
+  
+}

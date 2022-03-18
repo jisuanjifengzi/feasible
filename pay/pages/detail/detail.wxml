@@ -1,0 +1,32 @@
+ <scroll-view class="containerx" scroll-y>
+<view class="bg"><!--标题和描述-->
+  <image class="bg-image" mode="scaleToFill" src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fpic.sheji688.com%2Fback_pic%2F19%2F03%2F07%2F24a03704a754ff3ed7ed8846e4eedd95.jpg%21%2Ffw%2F700&refer=http%3A%2F%2Fpic.sheji688.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1645863609&t=8a2fa5d282523cecf628865cb8693e38"></image>
+  </view>
+<view class="fatieren">
+  <image class="touxiang"src="{{detail.faceImg}}"></image>
+  <view class="author">{{detail.author}} </view>
+  <scroll-view class="container4" scroll-y>
+  <view class="title"><text>{{detail.title}}</text></view>
+</scroll-view>
+<scroll-view class="container3" scroll-y>
+  <text>{{detail.desc}}</text>
+</scroll-view>
+
+</view>
+<block wx:for="{{detail.image}}"> 
+  <image class="xiaotu" src="{{item}}" bindtap="preview"></image>
+</block>
+<!--评论-->
+<view class="tip" >评论区域
+<block wx:for="{{pinglun}}" wx:key="index">
+<view  class="liebiao">
+<text>{{item.name}}发表评论:</text>
+<text>{{item.content}}</text>
+</view>
+</block>
+</view>
+</scroll-view>
+<view class="zuihou">
+<input  name="pinglun" class="input" bindinput="getContent" placeholder="请输入评论内容" value="{{content}}"></input>
+<button class="fabiao" bindtap="fabiao">发表评论</button> 
+</view>

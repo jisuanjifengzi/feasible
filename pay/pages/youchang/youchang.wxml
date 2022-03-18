@@ -1,0 +1,22 @@
+<view class="all" wx:if="{{yanzhenInfo}}">
+<swiper class="swiper-container" indicator-dots indicator-color="white" indicator-active-color="red" autoplay interval="3000" circular>
+  <block wx:for = '{{home_images}}' wx:key = 'index' >
+    <swiper-item bindtap="chakan">
+      <image src = '{{item}}' class = "swiper-image"></image> 
+    </swiper-item>
+  </block>
+</swiper>
+<block wx:for="{{datalist}}" wx:key="index"> 
+<view class="itemRoot" bindtap="goDetail" data-id="{{item}}">
+<view>{{item.title}}</view>
+<view>求助人：{{item.author}}</view>
+<view>报酬金额:{{item.money}}</view>
+<view>{{item.creatime}}</view>
+<view class="xijie"bindtap="geDetail" >查看详情</view>
+</view>
+</block>
+<view>
+<image  bindtap="quxuanshang" class="addTopicBtn" src="/image/write42.png"></image>
+</view>
+</view>
+<view wx:if="{{!yanzhenInfo}}">必须授权登录后实名注册才可浏览哦</view>

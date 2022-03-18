@@ -1,0 +1,21 @@
+<view class="container1">
+
+<view class="container2">
+
+<scroll-view class="container4" scroll-y>
+  <view class="title"><text>{{detail.title}}</text></view>
+</scroll-view>
+<view class="author">{{detail.author}}</view>
+<scroll-view class="container3" scroll-y>
+  <text>{{detail.desc}}</text>
+</scroll-view>
+<!-- <image class="xiaotu" src="{{detail.image[0]}}" bindtap="preview"></image>
+<image class="xiaotu" src="{{detail.image[1]}}" bindtap="preview"></image> -->
+<block wx:for="{{detail.image}}"> 
+  <image class="xiaotu" src="{{item}}" bindtap="preview"></image>
+</block>
+<image src="/image/mjshi.png" class="tochat" bindtap="contact">
+</image>
+</view>
+
+</view>
