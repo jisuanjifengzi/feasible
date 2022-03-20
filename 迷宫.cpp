@@ -2,7 +2,7 @@
 #include<windows.h >
 using namespace std;
 template <class T>
-class LinkedStack;    //Ê¹ÓÃÁËÄ£°åÀà
+class LinkedStack;    
 template <class T>
 class Node {
 	friend LinkedStack<T>;
@@ -14,7 +14,7 @@ private:
 template<class T>
 class LinkedStack {
 public:
-	LinkedStack() {   //¹¹Ôìº¯Êı
+	LinkedStack() {   //æ„é€ å‡½æ•°
 		top = 0;
 	}
 	~LinkedStack();
@@ -30,18 +30,18 @@ public:
 	void randomMaze();
 	bool setPathOnMaze();
 	void outputMaze();
-	void set(int m, int n) {     //¸Ä±ämaze_sizeµÄÖµ
+	void set(int m, int n) {     //æ”¹å˜maze_sizeçš„å€¼
 		maze_size.row = m;
 		maze_size.col = n;
 	}
 private:
-	Node<T>* top; // Ö¸ÏòÕ»¶¥½Úµã
-	T maze_size = { 20,30 };   //Ä¬ÈÏÎª20*30µÄ´óĞ¡
-	int** const maze = new int* [maze_size.row + 2];   //¶şÎ¬Êı×éÓÃÓÚ´¢´æ
-	T offset[4];  //´æ´¢Î»ÖÃĞÅÏ¢
+	Node<T>* top; // æŒ‡å‘æ ˆé¡¶èŠ‚ç‚¹
+	T maze_size = { 20,30 };   //é»˜è®¤ä¸º20*30çš„å¤§å°
+	int** const maze = new int* [maze_size.row + 2];   //äºŒç»´æ•°ç»„ç”¨äºå‚¨å­˜
+	T offset[4];  //å­˜å‚¨ä½ç½®ä¿¡æ¯
 
 };
-template<class T>    //Îö¹¹º¯Êı
+template<class T>    //ææ„å‡½æ•°
 LinkedStack<T>::~LinkedStack()
 {
 	Node<T>* node;
@@ -51,13 +51,13 @@ LinkedStack<T>::~LinkedStack()
 		top = node;
 	}
 }
-template<class T>     //»ñµÃÕ»¶¥ÔªËØÊı¾İ
+template<class T>     //è·å¾—æ ˆé¡¶å…ƒç´ æ•°æ®
 T LinkedStack<T>::Top() const {
-	if (IsEmpty()) { cout << "Õ»Îª¿Õ" << endl; }
+	if (IsEmpty()) { cout << "æ ˆä¸ºç©º" << endl; }
 	return top->data;
 }
 template<class T>
-LinkedStack<T>& LinkedStack<T>::push(const T& x) {    //Õ»ÀïÃæÌí¼ÓÔªËØ
+LinkedStack<T>& LinkedStack<T>::push(const T& x) {    //æ ˆé‡Œé¢æ·»åŠ å…ƒç´ 
 	Node<T>* next = new Node<T>;
 	next->data = x;
 	next->link = top;
@@ -65,7 +65,7 @@ LinkedStack<T>& LinkedStack<T>::push(const T& x) {    //Õ»ÀïÃæÌí¼ÓÔªËØ
 	return *this;
 }
 template<class T>
-LinkedStack<T>& LinkedStack<T>::pop() {   //Õ»ÀïÃæÉ¾³ıÔªËØ
+LinkedStack<T>& LinkedStack<T>::pop() {   //æ ˆé‡Œé¢åˆ é™¤å…ƒç´ 
 	Node<T>* next = top;
 	top = top->link;
 	delete next;
@@ -75,7 +75,7 @@ template<class T>
 void LinkedStack<T>::init()
 {
 
-	//Æ«ÒÆ
+	//åç§»
 	offset[0].row = 0; offset[0].col = 1; //right
 	offset[1].row = 1; offset[1].col = 0; //down
 	offset[2].row = 0; offset[2].col = -1; //left
@@ -96,17 +96,17 @@ void LinkedStack<T>::randomMaze()
 	{
 		for (j = 0; j < maze_size.col + 2; j++)
 		{
-			//ÉèÖÃÎ§Ç½
+			//è®¾ç½®å›´å¢™
 			if ((i == 0) || (i == maze_size.row + 1) || (j == 0) || (j == maze_size.col + 1))
 			{
 				maze[i][j] = 5;
 			}
 			else
 			{
-				rate = rand() % 10 + 1;   //Ê¹ÓÃËæ»úÊı·½·¨£¬²úÉúËæ»úÊı1-10
+				rate = rand() % 10 + 1;   //ä½¿ç”¨éšæœºæ•°æ–¹æ³•ï¼Œäº§ç”Ÿéšæœºæ•°1-10
 				if (rate <= 2)
 				{
-					maze[i][j] = 1;//Ëæ»úÉú³ÉÕÏ°­
+					maze[i][j] = 1;//éšæœºç”Ÿæˆéšœç¢
 				}
 				else
 				{
@@ -115,18 +115,18 @@ void LinkedStack<T>::randomMaze()
 			}
 		}
 	}
-	//×îºó±£Ö¤ÆğµãºÍÖÕµãÄÜ×ß
+	//æœ€åä¿è¯èµ·ç‚¹å’Œç»ˆç‚¹èƒ½èµ°
 	maze[1][1] = maze[maze_size.row][maze_size.col] = 0;
 }
 
 template<class T>
 bool LinkedStack<T>::findPath()
 {
-	//POSITION here;//µ±Ç°Î»ÖÃ
+	//POSITION here;//å½“å‰ä½ç½®
 	//cout << "good1" << endl;
 	T here;
 	here.row = here.col = 1;
-	maze[1][1] = 3; //·ÅÖÃÕÏ°­£¬·ÀÖ¹»ØÀ´
+	maze[1][1] = 3; //æ”¾ç½®éšœç¢ï¼Œé˜²æ­¢å›æ¥
 	int option = 0; //next step
 	const int lastOption = 3;
 
@@ -146,13 +146,13 @@ bool LinkedStack<T>::findPath()
 			option++;//next choice
 		}
 
-		//ÏàÁÚµÄÎ»ÖÃÄÜ×ß£¿
+		//ç›¸é‚»çš„ä½ç½®èƒ½èµ°ï¼Ÿ
 		if (option <= lastOption)
 		{
 			push(here);
 			here.row = r;
 			here.col = c;
-			maze[r][c] = 3; //×ß¹ıÁË
+			maze[r][c] = 3; //èµ°è¿‡äº†
 			option = 0;
 		}
 		else
@@ -162,7 +162,7 @@ bool LinkedStack<T>::findPath()
 				return false;
 			}
 			//go back
-			maze[here.row][here.col] = 3; //´ËÂ·²»¿ÉÍ¨
+			maze[here.row][here.col] = 3; //æ­¤è·¯ä¸å¯é€š
 			here = Top();
 			pop();
 			option = 0;
@@ -174,24 +174,24 @@ bool LinkedStack<T>::findPath()
 }
 
 template<class T>
-bool LinkedStack<T>::setPathOnMaze()    //½«Õ»ÀïÃæµÄÊı¾İÊä³ö¸ømazeÊı×éµÄÖµ£¬ÉèÎª2
+bool LinkedStack<T>::setPathOnMaze()    //å°†æ ˆé‡Œé¢çš„æ•°æ®è¾“å‡ºç»™mazeæ•°ç»„çš„å€¼ï¼Œè®¾ä¸º2
 {
 	T pos;
 	if (IsEmpty()) {
 		cout << endl;
-		cout << "¾­¹ı³¢ÊÔ£¬ÃÔ¹¬Ã»ÓĞ³öÂ·" << endl;
+		cout << "ç»è¿‡å°è¯•ï¼Œè¿·å®«æ²¡æœ‰å‡ºè·¯" << endl;
 		return false;
 	}
 	while (!IsEmpty())
 	{
 		pos = Top();
 		pop();
-		maze[pos.row][pos.col] = 2;//Â·¾¶
+		maze[pos.row][pos.col] = 2;//è·¯å¾„
 	}
 	return true;
 }
 
-//È»ºó£¬¿ÉÒÔ¿ªÊ¼Êä³öÎÒÃÇµÄµØÍ¼ÁË¡£
+
 template<class T>
 void LinkedStack<T>::outputMaze()
 {
@@ -230,11 +230,11 @@ typedef struct
 {
 	int row;
 	int col;
-}POSITION;    //Ê¹ÓÃ½á¹¹Ìå POSITION£¬À´³õÊ¼»¯Î»ÖÃĞÅÏ¢
+}POSITION;    //ä½¿ç”¨ç»“æ„ä½“ POSITIONï¼Œæ¥åˆå§‹åŒ–ä½ç½®ä¿¡æ¯
 
 int main()
 {
-	cout << "ÇëÊäÈëÃÔ¹¬µÄ³¤ºÍ¿í,µÈÏÂ»áËæ»úÉú³ÉÃÔ¹¬" << endl;
+	cout << "è¯·è¾“å…¥è¿·å®«çš„é•¿å’Œå®½,ç­‰ä¸‹ä¼šéšæœºç”Ÿæˆè¿·å®«" << endl;
 	int m, n;
 	cin >> m >> n;
 	LinkedStack<POSITION> path;
