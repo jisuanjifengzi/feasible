@@ -30,7 +30,7 @@ public:
 					break;
 				}
 			}
-		}//ÕÒ·ÖÄ¸×îÐ¡¹«±¶Êý
+		}//ï¿½Ò·ï¿½Ä¸ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		this->fenzi = this->fenzi * (i / this->fenmu);
 		this->fenmu = i;
 		int b_fenzi= second.fenzi * (i / second.fenmu);
